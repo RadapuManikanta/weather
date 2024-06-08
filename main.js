@@ -21,7 +21,7 @@ function convertion(val){
 
         const res=  await fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputval.value+'&appid='+apik);
         const result =   await res.json() //.then(res => res.json())
-        console.log(result);
+        console.log(result.name);
          /*.then(data => console.log(data))
         .then(data => {
             var nameval = data['name']
